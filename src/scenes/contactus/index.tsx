@@ -128,7 +128,7 @@ const ContacUs = ({ setSelectedPage }: Props) => {
               )}
                           
                           <input type="hidden" name="_captcha" value="false" />
-                          <input type="hidden" name="_next" value="http://localhost:5173" />
+                          <input type="hidden" name="_next" value="https://gym-landing.pages.dev/" />
               <button type="submit"
                 className="mt-5 rounded-lg bg-secondary-500 px-20 py-3 transition duration-500 hover:text-white"
               >
