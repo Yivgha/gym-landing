@@ -15,3 +15,49 @@ body,
   font-family: "DM Sans", sans-serif;
   @apply text-gray-500;
 }
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+
+
+.parentBox{
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.parentBox:before,
+.parentBox:after {
+  position: absolute;
+  top: 0;
+  width: 150px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.parentBox:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(254, 226, 226, 0), rgb(254 226 226));
+}
+
+.parentBox:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(254, 226, 226, 0), rgb(254 226 226));
+}
+
+.parentBox:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 45s slide infinite linear;
+}
