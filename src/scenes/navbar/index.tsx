@@ -34,7 +34,7 @@ const Navbar = ({selectedPage, setSelectedPage, isTopOfPage}: Props) => {
                               <Link page="Contact us" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
                           </div>
                           <div className={`${flexBetween} gap-8`}>
-                              <p>Sign in</p>
+                              {/* <p>Sign in</p> */}
                               <ActionButton setSelectedPage={setSelectedPage}>Become a Member</ActionButton>
                           </div>
                       </div> : (<button type="button" className="rounded-full bg-secondary-500 p-2"
